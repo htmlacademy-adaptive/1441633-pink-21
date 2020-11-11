@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Даша](https://up.htmlacademy.ru/adaptive/21/user/1441633).
-* Наставник: `Неизвестно`.
+* Наставник: [Инна Кришталь✨](https://htmlacademy.ru/profile/id43485).
 
 ---
 
