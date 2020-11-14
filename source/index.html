@@ -82,10 +82,11 @@
 
       <section class="comments">
         <div class="comments__wrapper slider">
+          <h2 class="visually-hidden">Отзывы наших пользователей</h2>
           <ul class="comments__list slider__list">
             <li class="comments__item slider__item">
               <h3 class="comments__name">Николай Петров</h3>
-              <p class="comments__comment?">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
+              <blockquote class="comments__comment?">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</blockquote>
             </li>
             <li class="comments__item slider__item">
               <h3 class="comments__name"></h3>
@@ -104,7 +105,34 @@
         </div>
       </section>
 
-      <section class="catalog"></section>
+      <section class="catalog">
+        <div class="catalog__wrapper">
+          <h2 class="visually-hidden">Тарифы</h2>
+
+          <div class="catalog__list slider__column">
+            <header class="catalog__header slider__header">
+              <h4 class="catalog__title">Стандарт</h4>
+              <p class="catalog__price">3,99 USD</p>
+            </header>
+            <ul class="catalog__items slider__items">
+              <li class="catalog__item">
+                <p class="catalog__option">Розовый фильтр</p>
+              </li>
+              <li class="catalog__item">
+                <p class="catalog__option">Смайлики</p>
+              </li>
+              <li class="catalog__item">
+                <p class="catalog__option">Комментарии</p>
+              </li>
+            </ul>
+          </div>
+          <div class="catalog__toggles slider__toggles">
+            <button class="slider__toggle" type="button">1</button>
+            <button class="slider__toggle slider__toggle--current" type="button">2</button>
+            <button class="slider__toggle" type="button">3</button>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="page-footer"></footer>
