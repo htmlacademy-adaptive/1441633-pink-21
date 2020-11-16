@@ -89,11 +89,11 @@
             </li>
             <li class="comments__item slider__item">
               <h3 class="comments__author"></h3>
-              <p class="comments__text?"></p>
+              <p class="comments__text"></p>
             </li>
             <li class="comments__item slider__item">
               <h3 class="comments__author"></h3>
-              <p class="comments__text?"></p>
+              <p class="comments__text"></p>
             </li>
           </ul>
           <div class="comments__toggles slider__toggles">
@@ -105,26 +105,40 @@
       </section>
 
       <section class="catalog">
-        <div class="catalog__wrapper">
+        <div class="catalog__wrapper slider">
           <h2 class="visually-hidden">Тарифы</h2>
 
-          <div class="catalog__list slider__column">
-            <header class="catalog__header slider__header">
-              <h4 class="catalog__title">Стандарт</h4>
-              <p class="catalog__price">3,99 USD</p>
-            </header>
-            <ul class="catalog__items slider__items">
-              <li class="catalog__item">
-                <p class="catalog__option">Розовый фильтр</p>
-              </li>
-              <li class="catalog__item">
-                <p class="catalog__option">Смайлики</p>
-              </li>
-              <li class="catalog__item">
-                <p class="catalog__option">Комментарии</p>
-              </li>
-            </ul>
-          </div>
+          <table>
+            <thead>
+              <tr>
+                <th></th>
+                <th>База<small>1,99 USD</small></th>
+                <th>Стандарт<small>3,99 USD</small></th>
+                <th>Анлим<small>9,99 USD</small></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Розовый фильтр</td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Смайлики</td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Комментарий</td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+
           <div class="catalog__toggles slider__toggles">
             <button class="slider__toggle" type="button">1</button>
             <button class="slider__toggle slider__toggle--current" type="button">2</button>
@@ -137,19 +151,19 @@
         <div class="contacts__wrapper">
           <h2 class="visually-hidden">Контакты разработчиков</h2>
           <p class="contacts__appeal">Остались вопросы?<br>Свяжитесь с нами</p>
-          <div class="contacts__phone">
+          <div class="contacts__data">
             <b class="contacts__invitation">Звоните</b>
             <a class="contacts__info" href="tel:+7(812)555-66-66">+7 (812) 555-66-66</a>
           </div>
-          <div class="contacts__sending-messages">
+          <div class="contacts__data">
             <b class="contacts__invitation">Пишите</b>
             <a class="contacts__info"><span class="contacts__info-text">mail@htmlacademy.ru</span></a>
           </div>
-          <div class="contacts__location">
+          <div class="contacts__data">
             <b class="contacts__invitation">Приезжайте в гости</b>
-            <p class="contacts__info"></p> г. Санкт-Петербург, ул. Большая Конюшенная 19/8</p>
+            <p class="contacts__info">г. Санкт-Петербург, ул. Большая Конюшенная 19/8</p>
           </div>
-          <div class="contacts__map">
+          <div class="contacts__map"></div>
         </div>
       </section>
     </main>
@@ -161,21 +175,21 @@
             <img src="#" alt="Приложение Pink">
           </a>
         </div>
-        <section class="footer-social social">
+        <section class="page-footer__social">
           <h2 class="visually-hidden">Соцсети</h2>
-          <ul class="social__list">
-            <li class="social__item">
-              <a href="" class="social__item-link">
+          <ul class="page-footer__social-list">
+            <li class="page-footer__social-item">
+              <a href="" class="page-footer__social-item-link">
                 <span class="visually-hidden">Наша страница в Твиттер</span>
               </a>
             </li>
-            <li class="social__item">
-              <a href="" class="social__item-link">
+            <li class="page-footer__social-item">
+              <a href="" class="page-footer__social-tem-link">
                 <span class="visually-hidden">Наша группа в Фейсбук</span>
               </a>
             </li>
-            <li class="social__item">
-              <a href="" class="social__item-link">
+            <li class="page-footer__social-item">
+              <a href="" class="page-footer__social-item-link">
                 <span class="visually-hidden">Наш канал на YouTube</span>
             </li>
           </ul>
