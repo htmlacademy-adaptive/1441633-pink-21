@@ -39,17 +39,15 @@
       <h1 class="visually-hidden">Pink - приложение для редактирования и обмена фотографиями</h1>
 
       <section class="loading">
-        <div class="loading__wrapper">
-          <h2 class="visually-hidden">Загрузить приложение</h2>
+        <h2 class="visually-hidden">Загрузить приложение</h2>
           <p class="loading__slogan">Взгляните на жизнь иначе!</p>
           <div class="download-buttons">
-            <button class="download-buttons__button" type="button">Скачать приложение</button>
-            <a class="download-buttons__for-apple" href="#" alt="Скачать для Apple"></a>
-            <a class="download-buttons__for-android" href="#" alt="Скачать для Android"></a>
-            <a class="download-buttons__for-windows" href="#" alt="Скачать для Windows"></a>
+            <a class="download-buttons__button" href="https://www.apple.com/ru/app-store/">Скачать приложение</a>
+            <a class="download-buttons__for-apple" href="https://www.apple.com/ru/app-store/" alt="Скачать для Apple"></a>
+            <a class="download-buttons__for-android" href="https://play.google.com/store?hl=ru&gl=US" alt="Скачать для Android"></a>
+            <a class="download-buttons__for-windows" href="https://www.microsoft.com/ru-ru/store/apps/windows" alt="Скачать для Windows"></a>
             <p class="download-buttons__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
           </div>
-        </div>
      </section>
 
       <section class="advantages">
@@ -79,10 +77,9 @@
         </div>
       </section>
 
-      <section class="comments">
-        <div class="comments__wrapper slider">
-          <h2 class="visually-hidden">Отзывы наших пользователей</h2>
-          <ul class="comments__list slider__list">
+      <section class="comments slider">
+        <h2 class="visually-hidden">Отзывы наших пользователей</h2>
+          <ul class="slider__list">
             <li class="comments__item slider__item">
               <h3 class="comments__author">Николай Петров</h3>
               <blockquote class="comments__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</blockquote>
@@ -96,21 +93,18 @@
               <p class="comments__text"></p>
             </li>
           </ul>
-          <div class="comments__toggles slider__toggles">
+          <div class="slider__toggles">
             <button class="slider__toggle slider__toggle--current" type="button">1</button>
             <button class="slider__toggle" type="button">2</button>
             <button class="slider__toggle" type="button">3</button>
           </div>
-        </div>
       </section>
 
       <section class="catalog">
-        <div class="catalog__wrapper slider">
           <h2 class="visually-hidden">Тарифы</h2>
-
-          <table>
+          <table class="catalog_table slider">
             <thead>
-              <tr>
+              <tr class="catalog_table-head">
                 <th></th>
                 <th>База<small>1,99 USD</small></th>
                 <th>Стандарт<small>3,99 USD</small></th>
@@ -139,12 +133,11 @@
             </tbody>
           </table>
 
-          <div class="catalog__toggles slider__toggles">
+          <div class="slider__toggles">
             <button class="slider__toggle" type="button">1</button>
             <button class="slider__toggle slider__toggle--current" type="button">2</button>
             <button class="slider__toggle" type="button">3</button>
           </div>
-        </div>
       </section>
 
       <section class="contacts">
