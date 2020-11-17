@@ -22,13 +22,13 @@
               <a href="index.html">Главная</a>
             </li>
             <li class="nav-list__item">
-              <a href="photo.html">Фотографии</a>
+              <a href="catalog.html">Фотографии</a>
             </li>
             <li class="nav-list__item">
               <a>Конкурс</a>
             </li>
             <li class="nav-list__item">
-              <a href="#">HTML Academy</a>
+              <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
             </li>
           </ul>
         </div>
@@ -39,23 +39,24 @@
       <h1>Конкурс на самое безбашенное путешествие с Пинк</h1>
       <p>Поделитесь своей историей и получите шанс выиграть ценный приз &ndash; 1000 миль на вашу бонусную карту!</p>
       <form action="https://echo.htmlacademy.ru" method="post">
-        <div>
-          <p class="">
-            <label for="" class="">Фамилия:</label>
-            <input id="name" type="text" name="date" placeholder="Укажите фамилию *">
-          </p>
-          <p class="">
-            <label for="" class="">Имя:</label>
-            <input id="name" type="text" name="date" placeholder="Введите ваше имя *">
-          </p>
-          <p class="">
-            <label for="" class="">Отчество:</label>
-            <input id="name" type="text" name="date" placeholder="Ну и отчество тоже *">
-          </p>
-        </div>
-        <div>
-          <fieldset>
-            <legend>Ваши безбашенные достижения в путешествии</legend>
+        <fieldset>
+          <legend class="visually-hidden">Анкета участника</legend>
+          <div>
+            <p class="">
+              <label for="" class="">Фамилия:</label>
+              <input id="name" type="text" name="date" placeholder="Укажите фамилию *">
+            </p>
+            <p class="">
+              <label for="" class="">Имя:</label>
+              <input id="name" type="text" name="date" placeholder="Введите ваше имя *">
+            </p>
+            <p class="">
+              <label for="" class="">Отчество:</label>
+              <input id="name" type="text" name="date" placeholder="Ну и отчество тоже *">
+            </p>
+          </div>
+          <div>
+            <h2>Ваши безбашенные достижения в путешествии</h2>
             <ul>
               <li>
                 <input type="checkbox" name="achievements" id="selfie" checked>
@@ -82,23 +83,20 @@
                 <label for="hotel">Разгромил отель</label>
               </li>
             </ul>
-          </fieldset>
-        </div>
+          </div>
+          <div>
+            <p class="">
+              <label for="" class="">Номер телефона</label>
+              <input id="name" type="tel" name="tel" placeholder="Номер, пожалуйста">
+            </p>
+            <p class="">
+              <label for="" class="">Адресс почты</label>
+              <input id="email" type="text" name="email" placeholder="Введите почту *">
+            </p>
+          </div>
 
-        <div>
-          <p class="">
-            <label for="" class="">Номер телефона</label>
-            <input id="name" type="tel" name="tel" placeholder="Номер, пожалуйста">
-          </p>
-          <p class="">
-            <label for="" class="">Адресс почты</label>
-            <input id="email" type="text" name="email" placeholder="Введите почту *">
-          </p>
-        </div>
-
-        <div>
-          <fieldset>
-            <legend>С какими приложением путешествовали?</legend>
+          <div>
+            <h2>С какими приложением путешествовали?</h2>
             <ul>
               <li>
                 <input type="radio" id="radioButton" checked>
@@ -113,17 +111,15 @@
                 <label for="radioButton">Windows Phone</label>
               </li>
             </ul>
-          </fieldset>
-        </div>
-
-        <div>
-         <p>Опишите свои эмоции</p>
-         <textarea name="" id="" rows="10">Можно прям в красках, не стеснясь в выражениях</textarea>
-        </div>
-
+          </div>
+          <div>
+            <p>Опишите свои эмоции</p>
+            <textarea name="" id="" rows="10">Можно прям в красках, не стеснясь в выражениях</textarea>
+          </div>
+        </fieldset>
         <input class="button" type="submit" value="Отправить форму">
+        <smal>* - обязательные поля</smal>
       </form>
-      <smal>* - обязательные поля</smal>
     </main>
 
     <footer class="page-footer">
@@ -160,4 +156,4 @@
         </div>
       </div>
     </footer>
-    </body>
+  </body>
