@@ -35,91 +35,95 @@
       </nav>
     </header>
 
-    <main>
-      <h1>Конкурс на самое безбашенное путешествие с Пинк</h1>
-      <p>Поделитесь своей историей и получите шанс выиграть ценный приз &ndash; 1000 миль на вашу бонусную карту!</p>
-      <form action="https://echo.htmlacademy.ru" method="post">
-        <fieldset>
-          <legend class="visually-hidden">Анкета участника</legend>
-          <div>
-            <p class="">
-              <label for="" class="">Фамилия:</label>
-              <input id="name" type="text" name="date" placeholder="Укажите фамилию *">
-            </p>
-            <p class="">
-              <label for="" class="">Имя:</label>
-              <input id="name" type="text" name="date" placeholder="Введите ваше имя *">
-            </p>
-            <p class="">
-              <label for="" class="">Отчество:</label>
-              <input id="name" type="text" name="date" placeholder="Ну и отчество тоже *">
-            </p>
-          </div>
-          <div>
-            <h2>Ваши безбашенные достижения в путешествии</h2>
-            <ul>
-              <li>
-                <input type="checkbox" name="achievements" id="selfie" checked>
-                <label for="selfie">Сделал селфи с акулой</label>
-              </li>
-              <li>
-                <input type="checkbox" name="achievements" id="tan" checked>
-                <label for="tan">Обгорел на пляже</label>
-              </li>
-              <li>
-                <input type="checkbox" name="achievements" id="chuck">
-                <label for="chuck">Видел Чака Норриса</label>
-              </li>
-              <li>
-                <input type="checkbox" name="achievements" id="purchases">
-                <label for="purchases">Накупил сувениров</label>
-              </li>
-              <li>
-                <input type="checkbox" name="achievements" id="tower" checked>
-                <label for="tower">Удержал башню</label>
-              </li>
-              <li>
-                <input type="checkbox" name="achievements" id="hotel">
-                <label for="hotel">Разгромил отель</label>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <p class="">
-              <label for="" class="">Номер телефона</label>
-              <input id="name" type="tel" name="tel" placeholder="Номер, пожалуйста">
-            </p>
-            <p class="">
-              <label for="" class="">Адресс почты</label>
-              <input id="email" type="text" name="email" placeholder="Введите почту *">
-            </p>
-          </div>
+    <main class="main-page">
+      <div class="blank">
+        <div class="start-use">
+          <h1 class="start-use__join">Конкурс на самое безбашенное путешествие с Пинк</h1>
+          <p class="start-use__text">Поделитесь своей историей и получите шанс выиграть ценный приз &ndash; 1000 миль на вашу бонусную карту!</p>
+        </div>
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <fieldset>
+            <legend class="visually-hidden">Анкета участника</legend>
+            <div class="blank__light-block">
+              <p class="blank__text-field">
+                <label for="name" class="blank__index">Фамилия:</label>
+                <input id="name" type="text" name="" placeholder="Укажите фамилию *">
+              </p>
+              <p class="blank__text-field">
+                <label for="name" class="blank__index">Имя:</label>
+                <input id="name" type="text" name="" placeholder="Введите ваше имя *">
+              </p>
+              <p class="blank__text-field">
+                <label for="name" class="blank__index">Отчество:</label>
+                <input id="name" type="text" name="" placeholder="Ну и отчество тоже *">
+              </p>
+            </div>
+            <div class="blank__dark-block">
+              <h2 class="blank__index">Ваши безбашенные достижения в путешествии</h2>
+              <ul class="blank_list">
+                <li class="blank__item">
+                  <input class="blank__checkbox" type="checkbox" name="achievements" id="selfie" checked>
+                  <label class="blank__point" for="selfie">Сделал селфи с акулой</label>
+                </li>
+                <li class="blank__item">
+                  <input class="blank__checkbox" type="checkbox" name="achievements" id="tan" checked>
+                  <label class="blank__point" for="tan">Обгорел на пляже</label>
+                </li>
+                <li class="blank__item">
+                  <input class="blank__checkbox" type="checkbox" name="achievements" id="chuck">
+                  <label class="blank__point" for="chuck">Видел Чака Норриса</label>
+                </li>
+                <li class="blank__item">
+                  <input class="blank__checkbox" type="checkbox" name="achievements" id="purchases">
+                  <label class="blank__point" for="purchases">Накупил сувениров</label>
+                </li>
+                <li class="blank__item">
+                  <input class="blank__checkbox" type="checkbox" name="achievements" id="tower" checked>
+                  <label class="blank__point" for="tower">Удержал башню</label>
+                </li>
+                <li class="blank__item">
+                  <input class="blank__checkbox" type="checkbox" name="achievements" id="hotel">
+                  <label class="blank__point" for="hotel">Разгромил отель</label>
+                </li>
+              </ul>
+            </div>
+            <div class="blank__light-block">
+              <p class="blank__text-field">
+                <label for="" class="blank__index">Номер телефона</label>
+                <input id="name" type="tel" name="tel" placeholder="Номер, пожалуйста">
+              </p>
+              <p class="blank__text-field">
+                <label for="" class="blank__index">Адресс почты</label>
+                <input id="email" type="text" name="email" placeholder="Введите почту *">
+              </p>
+            </div>
 
-          <div>
-            <h2>С какими приложением путешествовали?</h2>
-            <ul>
-              <li>
-                <input type="radio" id="radioButton" checked>
-                <label for="radioButton">Pink для iOS</label>
-              </li>
-              <li>
-                <input type="radio" id="radioButton">
-                <label for="radioButton">Pink на Android</label>
-              </li>
-              <li>
-                <input type="radio" id="radioButton">
-                <label for="radioButton">Windows Phone</label>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <p>Опишите свои эмоции</p>
-            <textarea name="" id="" rows="10">Можно прям в красках, не стеснясь в выражениях</textarea>
-          </div>
-        </fieldset>
-        <input class="button" type="submit" value="Отправить форму">
-        <smal>* - обязательные поля</smal>
-      </form>
+            <div class="blank__dark-block">
+              <h2 class="blank__index">С какими приложением путешествовали?</h2>
+              <ul class="blank_list">
+                <li class="blank__item">
+                  <input class="blank__radio" type="radio" id="radioButton" checked>
+                  <label class="blank__point" for="radioButton">Pink для iOS</label>
+                </li>
+                <li class="blank__item">
+                  <input class="blank__radio" type="radio" id="radioButton">
+                  <label class="blank__point" for="radioButton">Pink на Android</label>
+                </li>
+                <li class="blank__item">
+                  <input class="blank__radio" type="radio" id="radioButton">
+                  <label class="blank__point" for="radioButton">Windows Phone</label>
+                </li>
+              </ul>
+            </div>
+            <div class="blank__light-block">
+              <p class="blank__index">Опишите свои эмоции</p>
+              <textarea name="" id="" rows="10">Можно прям в красках, не стеснясь в выражениях</textarea>
+            </div>
+          </fieldset>
+          <input class="blank__button" type="submit" value="Отправить форму">
+          <smal class="blank__legend">* - обязательные поля</smal>
+        </form>
+      </div>
     </main>
 
     <footer class="page-footer">
@@ -157,3 +161,4 @@
       </div>
     </footer>
   </body>
+</html>
