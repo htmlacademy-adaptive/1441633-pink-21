@@ -17,18 +17,18 @@
           <span class="visually-hidden">Открыть навигацию сайта</span>
         </button>
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list nav-list">
+          <ul class="nav-list">
             <li class="nav-list__item">
-              <a>Главная</a>
+              <a class="nav-list__link nav-list__link-current" href="index.html">Главная</a>
             </li>
             <li class="nav-list__item">
-              <a href="catalog.html">Фотографии</a>
+              <a class="nav-list__link" href="catalog.html">Фотографии</a>
             </li>
             <li class="nav-list__item">
-              <a href="form.html">Конкурс</a>
+              <a class="nav-list__link" href="form.html">Конкурс</a>
             </li>
             <li class="nav-list__item">
-              <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+              <a class="nav-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
             </li>
           </ul>
         </div>
@@ -37,9 +37,9 @@
 
     <main class="page-main">
       <h1 class="visually-hidden">Pink - приложение для редактирования и обмена фотографиями</h1>
-
       <section class="start-use">
-        <h2 class="visually-hidden">Загрузить приложение</h2>
+        <div class="start-use__wrapper">
+          <h2 class="visually-hidden">Загрузить приложение</h2>
           <p class="start-use__join">Взгляните на жизнь иначе!</p>
           <div class="download-buttons">
             <a class="download-buttons__button" href="https://www.apple.com/ru/app-store/">Скачать приложение</a>
@@ -48,10 +48,10 @@
             <a class="download-buttons__for-windows" href="https://www.microsoft.com/ru-ru/store/apps/windows" alt="Скачать для Windows"></a>
             <p class="download-buttons__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
           </div>
+        </div>
      </section>
-
       <section class="advantages">
-        <div class="advantages__wrapper">
+        <div class="wrapper">
           <header class="advantages__header">
             <h2 class="visually-hidden">Преимущества</h2>
             <p class="advantages__problem">Устали от серости мегаполиса?</p>
@@ -76,9 +76,9 @@
           </div>
         </div>
       </section>
-
       <section class="comments slider">
-        <h2 class="visually-hidden">Отзывы наших пользователей</h2>
+        <div class="wrapper">
+          <h2 class="visually-hidden">Отзывы наших пользователей</h2>
           <ul class="slider__list">
             <li class="comments__item slider__item">
               <h3 class="comments__author">Николай Петров</h3>
@@ -98,8 +98,8 @@
             <button class="slider__toggle" type="button">2</button>
             <button class="slider__toggle" type="button">3</button>
           </div>
+        </div>
       </section>
-
       <section class="catalog">
         <div class="slider">
           <h2 class="visually-hidden">Тарифы</h2>
@@ -133,7 +133,6 @@
               </tr>
             </tbody>
           </table>
-
           <div class="slider__toggles">
             <button class="slider__toggle" type="button">1</button>
             <button class="slider__toggle slider__toggle--current" type="button">2</button>
@@ -143,7 +142,7 @@
       </section>
 
       <section class="contacts">
-        <div class="contacts__wrapper">
+        <div class="wrapper">
           <h2 class="visually-hidden">Контакты разработчиков</h2>
           <p class="contacts__appeal">Остались вопросы?<br>Свяжитесь с нами</p>
           <div class="contacts__data">
@@ -186,6 +185,7 @@
             <li class="social-list__item">
               <a href="" class="social-list__link">
                 <span class="visually-hidden">Наш канал на YouTube</span>
+              </a>
             </li>
           </ul>
         </section>
