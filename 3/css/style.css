@@ -1,0 +1,196 @@
+img {
+  max-width: 100%;
+  height: auto;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+.wrapper {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+@font-face {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-style: normal;
+  src: url('../fonts/opensans.woff2') format('woff2'), url('../fonts/opensans.woff') format('woff');
+}
+@font-face {
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-style: normal;
+  src: url('../fonts/opensansbold.woff2') format('woff2'), url('../fonts/opensansbold.woff') format('woff');
+}
+@font-face {
+  font-family: "Open Sans";
+  font-weight: 300;
+  font-style: normal;
+  src: url('../fonts/opensanslight.woff2') format('woff2'), url('../fonts/opensanslight.woff') format('woff');
+}
+.page {
+  height: 100%;
+  font-size: 14px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  line-height: 24px;
+}
+.page-body {
+  background-color: #E5E5E5;
+}
+.page-body__container {
+  max-width: 320px;
+  min-height: 100%;
+  margin: 0 auto;
+  background-color: #FFFFFF;
+}
+.page-main {
+  text-align: center;
+}
+.page-header {
+  font-weight: 700;
+  background-color: #283645;
+}
+.logo {
+  display: inline-block;
+}
+.main-nav {
+  width: 320px;
+  height: 325px;
+  left: 0px;
+  top: 0px;
+}
+.main-nav__container {
+  padding-left: 20px;
+  padding-top: 24px;
+  padding-bottom: 18px;
+  padding-right: 20px;
+}
+.main-nav__toggle {
+  float: right;
+  width: 50px;
+  height: 24px;
+}
+.nav-list__item {
+  text-align: center;
+  padding-top: 19px;
+  padding-bottom: 19px;
+  box-shadow: 0px 1px 0px #000000, inset 1px 2px 1px rgba(255, 255, 255, 0.15);
+}
+.nav-list__link {
+  color: #FFFFFF;
+  font-size: 18px;
+}
+.start-use {
+  min-height: 396px;
+  color: #FFFFFF;
+  background-image: url('../img/app/back-mobile.jpg');
+  background-color: #283645;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.start-use__join {
+  font-size: 24px;
+  padding-top: 28px;
+  padding-bottom: 34px;
+}
+.download-buttons__button {
+  font-size: 18px;
+  color: #FFFFFF;
+  border: 3px solid #FFFFFF;
+  border-radius: 28px;
+  padding: 10px 38px 10px 38px;
+  text-align: center;
+}
+.download-buttons__description {
+  padding-top: 30px;
+  padding-bottom: 18px;
+}
+.advantages {
+  min-height: 752px;
+  background-color: #F2F2F2;
+}
+.advantages__header {
+  font-size: 24px;
+  color: #283645;
+  padding-top: 46px;
+  padding-bottom: 70px;
+  background-color: #FFFFFF;
+}
+.advantages__problem {
+  padding-bottom: 22px;
+}
+.advantages__subject {
+  font-size: 18px;
+  margin-top: 44px;
+}
+.advantages__description {
+  margin-top: 24px;
+}
+.advantages__img {
+  margin-top: 48px;
+}
+.comments {
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+.comments__author {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+.comments__text {
+  margin: 0;
+}
+.slider__toggles {
+  margin-top: 44px;
+}
+.contacts {
+  margin-top: 50px;
+}
+.contacts__appeal {
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 46px;
+}
+.contacts__data {
+  margin-top: 32px;
+}
+.contacts__invitation {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 13px;
+}
+.contacts__info {
+  color: #D22856;
+  font-size: 24px;
+  line-height: 32px;
+}
+.contacts__map {
+  min-height: 200px;
+  background-image: url("../img/map.jpg");
+  background-color: #F2F2F2;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 50px;
+}
+
+/*# sourceMappingURL=style.css.map */
