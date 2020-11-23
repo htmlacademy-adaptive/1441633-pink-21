@@ -6,18 +6,19 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page-body">
-
+    <div class="page-body__container">
     <header class="page-header">
-      <div class="logo">
-        <a class="logo__link">
-          <img src="#" alt="Приложение Pink">
-        </a>
-      </div>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть навигацию сайта</span>
-        </button>
-        <div class="wrapper">
+        <div class="main-nav__container">
+          <div class="logo">
+            <a class="logo__link">
+              <img src="img/header/logo.png" alt="Приложение Pink">
+            </a>
+          </div>
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть навигацию сайта</span>
+          </button>
+        </div>
           <ul class="nav-list">
             <li class="nav-list__item">
               <a class="nav-list__link nav-list__link-current" href="#">Главная</a>
@@ -32,7 +33,6 @@
               <a class="nav-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
             </li>
           </ul>
-        </div>
       </nav>
     </header>
 
@@ -52,30 +52,32 @@
         </div>
       </section>
       <section class="advantages">
-        <div class="wrapper">
           <header class="advantages__header">
-            <h2 class="visually-hidden">Преимущества</h2>
+            <div class="wrapper">
+              <h2 class="visually-hidden">Преимущества</h2>
             <p class="advantages__problem">Устали от серости мегаполиса?</p>
             <p class="advantages__offer">Нам есть, что вам предложить!</p>
+            </div>
           </header>
-          <ul class="advantages__list">
-            <li class="advantages__item">
-              <h3 class="advantages__subject">Поднимает настроение</h3>
-              <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-            </li>
-            <li class="advantages__item">
-              <h3 class="advantages__subject">Меняет мир вокруг</h3>
-              <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтбы усилить эффект</p>
-            </li>
-            <li class="advantages__item">
-              <h3 class="advantages__subject">Заводит новых друзей</h3>
-              <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с сдрузьями и заводите новых</p>
-            </li>
-          </ul>
-          <div class="advantages__img">
-            <img src="#" alt="Всем привет!">
+          <div class="wrapper">
+            <ul class="advantages__list">
+              <li class="advantages__item">
+                <h3 class="advantages__subject">Поднимает настроение</h3>
+                <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+              </li>
+              <li class="advantages__item">
+                <h3 class="advantages__subject">Меняет мир вокруг</h3>
+                <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтбы усилить эффект</p>
+              </li>
+              <li class="advantages__item">
+                <h3 class="advantages__subject">Заводит новых друзей</h3>
+                <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с сдрузьями и заводите новых</p>
+              </li>
+            </ul>
+            <figure class="advantages__img">
+              <img src="img/iphone.png" width="157" hight="320" alt="Всем привет!">
+            </figure>
           </div>
-        </div>
       </section>
       <section class="comments slider">
         <div class="wrapper">
@@ -87,11 +89,11 @@
             </li>
             <li class="comments__item slider__item">
               <h3 class="comments__author"></h3>
-              <blockquote class="comments__text"></p>
+              <blockquote class="comments__text"></blockquote>
             </li>
             <li class="comments__item slider__item">
               <h3 class="comments__author"></h3>
-              <blockquote class="comments__text"></p>
+              <blockquote class="comments__text"></blockquote>
             </li>
           </ul>
           <div class="slider__toggles">
@@ -147,19 +149,21 @@
           <h2 class="visually-hidden">Контакты разработчиков</h2>
           <p class="contacts__appeal">Остались вопросы?<br>Свяжитесь с нами</p>
           <div class="contacts__data">
-            <b class="contacts__invitation">Звоните</b>
+            <p class="contacts__invitation">Звоните</p>
             <a class="contacts__info" href="tel:+7(812)555-66-66">+7 (812) 555-66-66</a>
           </div>
           <div class="contacts__data">
-            <b class="contacts__invitation">Пишите</b>
-            <a class="contacts__info"><span class="contacts__info-text">mail@htmlacademy.ru</span></a>
+            <p class="contacts__invitation">Пишите</p>
+            <a class="contacts__info">mail@htmlacademy.ru</a>
           </div>
           <div class="contacts__data">
-            <b class="contacts__invitation">Приезжайте в гости</b>
-            <p class="contacts__info">г. Санкт-Петербург, ул. Большая Конюшенная 19/8</p>
+            <p class="contacts__invitation">Приезжайте в гости</p>
+            <p class="contacts__info">ул. Большая Конюшенная 19/8</p>
           </div>
-          <div class="contacts__map"></div>
         </div>
+          <div class="contacts__map">
+            <iframe width="320" height="200" frameborder="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.628948921784!2d30.318483040323407!3d59.93522062825997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1606113241334!5m2!1sru!2sru" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          </div>
       </section>
     </main>
 
@@ -199,6 +203,6 @@
         </div>
       </div>
     </footer>
-
+</div>
   </body>
 </html>
