@@ -5,6 +5,9 @@ img {
 h1 {
   margin: 0;
 }
+h2 {
+  margin: 0;
+}
 p {
   margin: 0;
   padding: 0;
@@ -17,19 +20,8 @@ ul {
   margin: 0px;
   padding: 0px;
 }
-.wrapper {
-  margin-left: 20px;
-  margin-right: 20px;
-}
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+fieldset {
+  margin: 0;
 }
 @font-face {
   font-family: "Open Sans";
@@ -94,13 +86,14 @@ ul {
 }
 .nav-list__item {
   text-align: center;
-  padding-top: 19px;
-  padding-bottom: 19px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   box-shadow: 0px 1px 0px #000000, inset 1px 2px 1px rgba(255, 255, 255, 0.15);
 }
 .nav-list__link {
   color: #FFFFFF;
   font-size: 18px;
+  line-height: 32px;
 }
 .app {
   min-height: 396px;
@@ -113,21 +106,10 @@ ul {
 }
 .app__join {
   font-size: 24px;
+  font-weight: 300;
   line-height: 28px;
   padding-top: 29px;
   padding-bottom: 34px;
-}
-.download-buttons__button {
-  font-size: 18px;
-  color: #FFFFFF;
-  border: 3px solid #FFFFFF;
-  border-radius: 28px;
-  padding: 10px 38px 10px 38px;
-  text-align: center;
-}
-.download-buttons__description {
-  padding-top: 30px;
-  padding-bottom: 18px;
 }
 .advantages {
   min-height: 752px;
@@ -142,6 +124,12 @@ ul {
 }
 .advantages__problem {
   padding-bottom: 22px;
+  font-weight: 300;
+  line-height: 28px;
+}
+.advantages__offer {
+  font-weight: 300;
+  line-height: 28px;
 }
 .advantages__subject {
   font-size: 18px;
@@ -174,6 +162,8 @@ ul {
   font-size: 24px;
   line-height: 28px;
   margin-bottom: 46px;
+  font-weight: 300;
+  color: #283645;
 }
 .contacts__data {
   margin-top: 32px;
@@ -181,12 +171,12 @@ ul {
 .contacts__invitation {
   font-size: 18px;
   font-weight: 700;
-  margin-bottom: 13px;
 }
 .contacts__info {
   color: #D22856;
   font-size: 24px;
   line-height: 32px;
+  font-weight: 300;
 }
 .contacts__map {
   min-height: 200px;
@@ -205,14 +195,10 @@ ul {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.use-text {
-  font-size: 14px;
-  line-height: 30px;
-  margin-top: 54px;
-}
 .start-use__join {
   font-size: 24px;
   line-height: 32px;
+  font-weight: 300;
 }
 .start-use__wrapper {
   padding-left: 46px;
@@ -231,47 +217,71 @@ ul {
   line-height: 24px;
 }
 .gallery__user-activity {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 300;
   color: #283645;
+  text-transform: uppercase;
+}
+.gallery__user-text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
 }
 .gallery__heart {
-  margin-top: 25px;
+  margin-top: 22px;
 }
 .gallery__wrapper {
   padding-left: 18px;
   padding-top: 26px;
   padding-bottom: 26px;
+  padding-right: 10px;
+}
+.post-photo {
+  background-color: #F2F2F2;
+  padding-bottom: 42px;
 }
 .filter__botton {
-  display: block;
   font-weight: bold;
   line-height: 18px;
   color: #D22856;
   border: 3px solid #D22856;
   background-color: rgba(255, 255, 255, 0);
   border-radius: 28px;
-  padding: 10px 90px 10px 90px;
   margin-bottom: 6px;
+  width: 280px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .blank__block {
   border: none;
-  padding: 0;
-  margin-top: 42px;
-  margin-bottom: 42px;
+  padding-top: 42px;
+  padding-bottom: 42px;
 }
 .blank__text-field input {
-  color: #283645;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 20px;
+  padding-bottom: 18px;
   padding-left: 20px;
-  padding-right: 78px;
   margin-bottom: 18px;
+  border: 2px solid #E5E5E5;
+  border-radius: 1px;
+  width: 256px;
+}
+.blank__text-field input::-moz-placeholder {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #283645;
+}
+.blank__text-field input::placeholder {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #283645;
 }
 .blank__index {
   color: #D22856;
   font-size: 14px;
-  padding-left: 44px;
+  padding-left: 22px;
   float: left;
   line-height: 30px;
   text-transform: uppercase;
@@ -286,6 +296,9 @@ ul {
 }
 .blank__item {
   padding-top: 44px;
+  float: left;
+  font-size: 18px;
+  line-height: 30px;
 }
 .blank__button {
   width: 276px;
@@ -293,9 +306,14 @@ ul {
   color: #FFFFFF;
   background: #2AAB6D;
   border: 2px solid #2AAB6D;
-  border-radius: 1px;
-  margin-top: 52npmpx;
+  border-radius: 2px;
+  margin-top: 52px;
   margin-bottom: 46px;
+  font-family: Open Sans;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
 }
 .blank__textarea {
   height: 197px;
@@ -308,6 +326,10 @@ ul {
 .blank__legend {
   text-transform: uppercase;
   margin-bottom: 20px;
+  line-height: 24px;
+}
+.blank__notice {
+  color: #D22856;
 }
 .page-footer__wrapper {
   min-height: 284px;
@@ -315,6 +337,49 @@ ul {
   margin-top: 40px;
   margin-right: 74px;
   margin-bottom: 50px;
+}
+.download-buttons__button {
+  font-size: 18px;
+  color: #FFFFFF;
+  border: 3px solid #FFFFFF;
+  border-radius: 28px;
+  padding: 10px 32px 10px 32px;
+  text-align: center;
+  line-height: 18px;
+  font-weight: 700;
+}
+.download-buttons__description {
+  padding-top: 30px;
+  padding-bottom: 18px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+}
+.use-text {
+  font-size: 14px;
+  line-height: 30px;
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+.catalog {
+  background-color: #F2F2F2;
+}
+.gray {
+  background-color: #F2F2F2;
+}
+.wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /*# sourceMappingURL=style.css.map */

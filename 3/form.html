@@ -62,7 +62,8 @@
               <input id="name" type="text" name="" placeholder="Ну и отчество тоже *">
             </p>
           </fieldset>
-          <fieldset class="blank__block wrapper">
+          <fieldset class="blank__block gray">
+            <div class="wrapper">
             <legend class="blank__tittle">Ваши безбашенные достижения в путешествии</legend>
             <p class="blank__item">
               <input class="blank__checkbox" type="checkbox" name="achievements" id="selfie" checked>
@@ -88,6 +89,7 @@
               <input class="blank__checkbox" type="checkbox" name="achievements" id="hotel">
               <label class="blank__point" for="hotel">Разгромил отель</label>
             </p>
+            </div>
           </fieldset>
           <fieldset class="blank__block wrapper">
             <legend class="visually-hidden">Контактные данные</legend>
@@ -100,7 +102,8 @@
                 <input id="email" type="text" name="email" placeholder="Введите почту *">
               </p>
           </fieldset>
-          <fieldset class="blank__block wrapper">
+          <fieldset class="blank__block gray">
+            <div class="wrapper">
             <legend class="blank__tittle">С какими приложением путешествовали?</legend>
             <p class="blank__item">
               <input class="blank__radio" type="radio" id="radioButton1" name="system" checked>
@@ -114,16 +117,16 @@
               <input class="blank__radio" type="radio" id="radioButton3" name="system">
               <label class="blank__point" for="radioButton3">Windows Phone</label>
             </p>
+          </div>
           </fieldset>
-          <fielldset class="blank__block">
-            <legend class="blank__tittle">Опишите свои эмоции</legend>
-            <div class="wrapper">
+          <fieldset class="blank__block">
+            <div class="blank__wrapper">
+              <legend class="blank__tittle">Опишите свои эмоции</legend>
               <textarea class="blank__textarea" name="story" id="story" rows="10">Можно прям в красках, не стесняясь в выражениях</textarea>
             </div>
-
           </fielldset>
           <button class="blank__button" type="submit">Отправить форму</button>
-          <p class="blank__legend">* - обязательные поля</p>
+          <p class="blank__legend"><span class=blank__notice>*</span> &ndash; обязательные поля</p>
         </form>
       </main>
 
