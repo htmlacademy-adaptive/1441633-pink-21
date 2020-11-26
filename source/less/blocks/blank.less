@@ -1,30 +1,36 @@
 .blank {
-
 }
 
 .blank__block {
   border: none;
-  padding: 0;
-  margin-top: 42px;
-  margin-bottom: 42px;
+  padding-top: 42px;
+  padding-bottom: 42px;
 }
 
 .blank__text-field {
 }
 
 .blank__text-field input {
-  color: @back;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 20px;
+  padding-bottom: 18px;
   padding-left: 20px;
-  padding-right: 78px;
   margin-bottom: 18px;
+  border: 2px solid @light-gray;
+  border-radius: 1px;
+  width: 256px;
+
+    &::placeholder {
+      font-size: 18px;
+      line-height: 30px;
+      font-weight: 400;
+      color: @back;
+    }
 }
 
 .blank__index {
   color: @pink;
   font-size: 14px;
-  padding-left: 44px;
+  padding-left: 22px;
   float: left;
   line-height: 30px;
   text-transform: uppercase;
@@ -42,6 +48,9 @@
 
 .blank__item {
   padding-top: 44px;
+  float: left;
+  font-size: 18px;
+  line-height: 30px;
 }
 
 .blank__checkbox {
@@ -59,9 +68,14 @@
   color: @white;
   background: @green;
   border: 2px solid @green;
-  border-radius: 1px;
-  margin-top: 52npmpx;
+  border-radius: 2px;
+  margin-top: 52px;
   margin-bottom: 46px;
+  font-family: Open Sans;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
 }
 
 .blank__textarea {
@@ -76,4 +90,9 @@
 .blank__legend {
   text-transform: uppercase;
   margin-bottom: 20px;
+  line-height: 24px;
+}
+
+.blank__notice {
+  color: @pink;
 }
