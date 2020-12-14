@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page-body">
@@ -52,32 +53,42 @@
         </div>
       </section>
       <section class="advantages">
-          <header class="advantages__header">
-            <div class="wrapper">
-              <h2 class="visually-hidden">Преимущества</h2>
-            <p class="advantages__problem">Устали от серости мегаполиса?</p>
-            <p class="advantages__offer">Нам есть, что вам предложить!</p>
-            </div>
-          </header>
+        <header class="advantages__header">
           <div class="wrapper">
-            <ul class="advantages__list">
-              <li class="advantages__item">
-                <h3 class="advantages__subject">Поднимает настроение</h3>
-                <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-              </li>
-              <li class="advantages__item">
-                <h3 class="advantages__subject">Меняет мир вокруг</h3>
-                <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтбы усилить эффект</p>
-              </li>
-              <li class="advantages__item">
-                <h3 class="advantages__subject">Заводит новых друзей</h3>
-                <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с сдрузьями и заводите новых</p>
-              </li>
-            </ul>
-            <figure class="advantages__img">
-              <img src="img/iphone.png" width="157" hight="320" alt="Всем привет!">
-            </figure>
+            <h2 class="visually-hidden">Преимущества</h2>
+            <p class="advantages__problem">Устали от серости мегаполиса?</p>
+            <p class="advantages__offer">Нам есть, что вам<br> предложить!</p>
           </div>
+        </header>
+        <div class="wrapper">
+          <figure class="advantages__img">
+            <img src="img/iphone.png" width="268" height="548" alt="Всем привет!">
+          </figure>
+          <ul class="advantages__list">
+            <li class="advantages__item">
+              <h3 class="advantages__subject">Поднимает настроение</h3>
+              <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            </li>
+            <li class="advantages__item">
+              <h3 class="advantages__subject">Меняет мир вокруг</h3>
+              <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтбы усилить эффект</p>
+            </li>
+            <li class="advantages__item">
+              <h3 class="advantages__subject">Заводит новых друзей</h3>
+              <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с сдрузьями и заводите новых</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="efficiency">
+        <div class="wrapper">
+          <h3 class="efficiency__statement">Эффект
+            на 24 часа!</h3>
+          <p class="efficiency__explanation">Британские ученые провели исследования
+            и доказали, что положительный эффект
+            от использования приложения длится целые сутки!</p>
+          <a class="efficiency__link">Узнать больше об исследовании</a>
+        </div>
       </section>
       <section class="comments slider">
         <div class="wrapper">
@@ -85,13 +96,14 @@
           <ul class="slider__list">
             <li class="comments__item slider__item">
               <h3 class="comments__author">Николай Петров</h3>
+              <p class="comments__autor-data">25 лет, водитель трамвая</p>
               <blockquote class="comments__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</blockquote>
             </li>
-            <li class="comments__item slider__item">
+            <li class="comments__item slider__item visually-hidden">
               <h3 class="comments__author"></h3>
               <blockquote class="comments__text"></blockquote>
             </li>
-            <li class="comments__item slider__item">
+            <li class="comments__item slider__item visually-hidden">
               <h3 class="comments__author"></h3>
               <blockquote class="comments__text"></blockquote>
             </li>
@@ -107,33 +119,33 @@
         <div class="wrapper">
         <div class="slider">
           <h2 class="visually-hidden">Тарифы</h2>
-          <table class="catalog__table">
+          <table class="catalog__table visually-hidden">
             <thead>
               <tr class="catalog__table-head">
-                <th class="visually-hidden"></th>
-                <th class="catalog__service catalog__column-1 visually-hidden">База<p class="catalog__price">1,99 USD</p></th>
-                <th class="catalog__service catalog__column-2">Стандарт<p class="catalog__price">3,99 USD</p></th>
-                <th class="catalog__service catalog__column-3 visually-hidden">Анлим<p class="catalog__price">9,99 USD</p></th>
+                <th class="catalog__service"></th>
+                <th class="catalog__service">База<p class="catalog__price">1,99 USD</p></th>
+                <th class="catalog__service">Стандарт<p class="catalog__price">3,99 USD</p></th>
+                <th class="catalog__service">Анлим<p class="catalog__price">9,99 USD</p></th>
               </tr>
             </thead>
             <tbody>
               <tr class="catalog__possibility">
-                <td class="visually-hidden">Розовый фильтр</td>
-                <td class="catalog__possibility-point visually-hidden">Розовый фильтр</td>
                 <td class="catalog__possibility-point">Розовый фильтр</td>
-                <td class="catalog__possibility-point visually-hidden">Розовый фильтр</td>
+                <td class="catalog__possibility-point">Розовый фильтр</td>
+                <td class="catalog__possibility-point">Розовый фильтр</td>
+                <td class="catalog__possibility-point">Розовый фильтр</td>
               </tr>
               <tr class="catalog__possibility">
-                <td class="visually-hidden">Смайлики</td>
-                <td class="catalog__possibility-point visually-hidden">Смайлики</td>
+                <td class="сatalog__possibility-point">Смайлики</td>
                 <td class="catalog__possibility-point">Смайлики</td>
-                <td class="catalog__possibility-point visually-hidden">Смайлики</td>
+                <td class="catalog__possibility-point">Смайлики</td>
+                <td class="catalog__possibility-point">Смайлики</td>
               </tr>
               <tr class="catalog__possibility">
-                <td class="visually-hidden">Комментарий</td>
-                <td class="catalog__possibility-point visually-hidden">Комментарий</td>
                 <td class="catalog__possibility-point">Комментарий</td>
-                <td class="catalog__possibility-point visually-hidden">Комментарий</td>
+                <td class="catalog__possibility-point">Комментарий</td>
+                <td class="catalog__possibility-point">Комментарий</td>
+                <td class="catalog__possibility-point">Комментарий</td>
               </tr>
             </tbody>
           </table>
@@ -150,6 +162,7 @@
         <div class="wrapper">
           <h2 class="visually-hidden">Контакты разработчиков</h2>
           <p class="contacts__appeal">Остались вопросы?<br>Свяжитесь с нами</p>
+          <div class="contacts__container">
           <div class="contacts__data">
             <p class="contacts__invitation">Звоните</p>
             <a class="contacts__info" href="tel:+7(812)555-66-66">+7 (812) 555-66-66</a>
@@ -161,6 +174,7 @@
           <div class="contacts__data">
             <p class="contacts__invitation">Приезжайте в гости</p>
             <p class="contacts__info">ул. Большая Конюшенная 19/8</p>
+          </div>
           </div>
         </div>
           <div class="contacts__map">

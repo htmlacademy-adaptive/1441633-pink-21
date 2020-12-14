@@ -20,6 +20,17 @@
   padding-bottom: 34px;
 }
 
+.catalog__service:nth-child(1),
+.catalog__service:nth-child(2n) {
+  display: none;
+
+  /*  @media (min-width: @tablet-width) {
+  }
+
+  @media (min-width: @desktop-width) {
+  }*/
+}
+
 .catalog__price {
   display: block;
   font-weight: 300;
@@ -38,4 +49,15 @@
 .catalog__possibility-point {
   padding-left: 20px;
   padding-right: 20px;
+}
+
+.catalog__possibility-point:nth-child(1),
+.catalog__possibility-point:nth-child(2n) {
+  display: none;
+
+  /*@media (min-width: @tablet-width) {
+  }
+
+  @media (min-width: @desktop-width) {
+  }*/
 }

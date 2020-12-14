@@ -11,6 +11,12 @@
   font-size: 24px;
   line-height: 32px;
   font-weight: 300;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 50px;
+    line-height: 68px;
+  }
 }
 
 .start-use__wrapper {
@@ -18,4 +24,18 @@
   padding-top: 102px;
   padding-right: 46px;
   padding-bottom: 50px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 150px;
+    padding-top: 190px;
+    padding-right: 150px;
+    padding-bottom: 140px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 100px;
+    padding-top: 184px;
+    padding-right: 100px;
+    padding-bottom: 104px;
+  }
 }

@@ -3,14 +3,19 @@
 }
 
 .download-buttons__button {
+  display: inline-block;
   font-size: 18px;
   color: @white;
   border: 3px solid @white;
   border-radius: 28px;
-  padding: 14px 32px 14px 32px;
+  padding: 12px 32px 12px 32px;
   text-align: center;
   line-height: 18px;
   font-weight: 700;
+
+  @media (min-width: @desktop-width) {
+    font-size: 21px;
+  }
 }
 
 .download-buttons__for-apple {
@@ -31,4 +36,12 @@
   font-weight: 300;
   font-size: 14px;
   line-height: 24px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+  }
 }

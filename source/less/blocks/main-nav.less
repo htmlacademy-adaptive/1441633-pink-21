@@ -1,8 +1,8 @@
 .main-nav {
-  width: 320px;
-  height: 325px;
-  left: 0;
-  top: 0;
+  @media (min-width: @desktop-width) {
+    display: flex;
+    padding: 48px 130px;
+  }
 }
 
 .main-nav__container {
@@ -10,10 +10,18 @@
   padding-top: 24px;
   padding-bottom: 18px;
   padding-right: 20px;
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+  }
 }
 
 .main-nav__toggle {
   float: right;
   width: 50px;
   height: 24px;
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
 }

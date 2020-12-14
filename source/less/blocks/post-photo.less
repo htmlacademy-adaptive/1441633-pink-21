@@ -1,6 +1,22 @@
 .post-photo {
   background-color: @gray;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
   padding-bottom: 30px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 56px;
+    padding-bottom: 54px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 130px;
+    margin-right: 130px;
+    padding-bottom: 56px;
+    padding-left: 80px;
+    padding-right: 60px;
+  }
 }
 
 .post-photo__img {

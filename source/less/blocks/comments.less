@@ -1,5 +1,13 @@
 .comments {
   margin-top: 50px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 100px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 192px;
+  }
 }
 
 .comments__item {
@@ -8,11 +16,58 @@
 
 .comments__author {
   font-size: 18px;
+  line-height: 30px;
   margin-bottom: 30px;
   color: @black;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    order: 1;
+    margin-top: 50px;
+    margin-bottom: 12px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 24px;
+    line-height: 30px;
+    order: 1;
+  }
 }
+
+.comments__autor-data {
+  font-size: 14px;
+  line-height: 30px;
+
+  @media (min-width: @mobile-width) {
+    display: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: inline;
+    order: 2;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: inline;
+    font-size: 18px;
+    line-height: 30px;
+    order: 2;
+  }
+}
+
 
 .comments__text {
   margin: 0;
   line-height: 30px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+    line-height: 30px;
+    order: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    order: 0;
+  }
 }
