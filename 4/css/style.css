@@ -537,6 +537,9 @@ fieldset {
     grid-row-gap: 54px;
   }
 }
+.gallery__post {
+  background-color: #F2F2F2;
+}
 @media (min-width: 960px) {
   .gallery__post {
     display: flex;
@@ -563,7 +566,6 @@ fieldset {
   font-size: 14px;
   line-height: 24px;
   text-align: left;
-  background-color: #F2F2F2;
 }
 @media (min-width: 660px) {
   .gallery__comment {
@@ -590,7 +592,6 @@ fieldset {
 .gallery__heart {
   margin-top: auto;
   border: none;
-  background-color: #F2F2F2;
   outline: none;
   width: -webkit-fit-content;
   width: -moz-fit-content;
