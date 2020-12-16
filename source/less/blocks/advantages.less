@@ -1,11 +1,6 @@
 .advantages {
-  min-height: 752px;
   background-color: @gray;
   padding-bottom: 46px;
-
-  @media (min-width: @tablet-width) {
-    min-height: 486px;
-  }
 }
 
 .advantages__header {
@@ -24,6 +19,17 @@
   @media (min-width: @desktop-width) {
     font-size: 50px;
     line-height: 68px;
+  }
+}
+
+.advantages__main {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: column-reverse;
   }
 }
 
@@ -99,11 +105,9 @@
   }*/
 
   @media (min-width: @tablet-width) {
-    float: left;
     margin-left: 0;
   }
 
-  @media (min-width: @desktop-width) {
-    display: none;
-  }
+  /*@media (min-width: @desktop-width) {
+  }*/
 }

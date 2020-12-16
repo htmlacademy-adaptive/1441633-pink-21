@@ -6,58 +6,57 @@
   border: none;
   margin-top: 42px;
   margin-bottom: 42px;
-  padding-right: 0;
-  padding-left: 0;
+  padding: 0;
   text-align: center;
   display: flex;
   flex-direction: column;
+  padding-top: 42px;
 
   @media (min-width: @tablet-width) {
     border: 2px solid @light-gray;
     border-radius: 1px;
-    margin: 22px;
-    padding-top: 40px;
-    padding-bottom: 50px;
-    margin-right: 20px;
-    margin-left: 20px;
+    padding-right: 60px;
+    padding-left: 60px;
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-right: 132px;
-    margin-left: 132px;
+    margin-top: 24px;
+    margin-bottom: 24px;
   }
 }
 
-.blank__block-name {
-  border: none;
-  order: 1;
-
-  @media (min-width: @desktop-width) {
-    flex-basis: 48%;
+.blank__section {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
   }
 }
 
 .blank__block-app {
-  order: 2;
-
   @media (min-width: @desktop-width) {
-    flex-basis: 48%;
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    position: absolute;
+    margin: 0;
+    top: 0;
+    right: 132px;
+    padding-right: 32px;
+    padding-left: 32px;
+    margin-top: 6px;
   }
 }
 
 .blank__block-achiev {
-  order: 3;
-
-  @media (min-width: @tablet-width) {
+  @media (min-width: @desktop-width) {
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-between;
   }
 }
 
 .blank__block-contact {
-  order: 4;
-
   @media (min-width: @desktop-width) {
     flex-direction: row;
     justify-content: space-between;
@@ -65,31 +64,37 @@
 }
 
 .blank__block-comment {
-  order: 5;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
-
-/*.blank__block-name,
-.blank__block-contact,
-.blank__block-app,
-.blank__block-achiev {
-  @media (min-width: @tablet-width) {
-    display: flex;
-    flex-direction: column;
-  }
-}*/
-
 
 .blank__block-wrapper {
   padding-left: 20px;
   padding-right: 20px;
 
+  @media (min-width: @desktop-width) {
+    padding-left: 130px;
+    padding-right: 130px;
+  }
+}
+
+.blank__block-name {
+  border: none;
+  padding-top: 0;
+
   @media (min-width: @tablet-width) {
-    padding-left: 60px;
-    padding-right: 60px;
+    padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 52%;
+    position: relative;
   }
 }
 
 .blank__text-field {
+  width: 100%;
+
   @media (min-width: @tablet-width) {
     display: flex;
     text-align: left;
@@ -99,7 +104,10 @@
 .blank__text-field-contact {
   @media (min-width: @tablet-width) {
     flex-direction: column-reverse;
-    flex-basis: 48%;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 46%;
   }
 }
 
@@ -112,6 +120,10 @@
   border-radius: 1px;
   width: 100%;
   box-sizing: border-box;
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 48px;
+  }
 
   &::placeholder {
     font-size: 18px;
@@ -137,6 +149,8 @@
 
   @media (min-width: @tablet-width) {
     padding-right: 20px;
+    padding-bottom: 26px;
+    padding-top: 14px;
   }
 }
 
@@ -158,8 +172,9 @@
 }
 
 .blank__item {
-  padding-top: 34px;
-  padding-bottom: 34px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 38px;
   text-align: left;
   font-size: 18px;
   line-height: 30px;
@@ -180,10 +195,19 @@
 }
 
 .blank__send {
+  margin-top: 52px;
+  margin-bottom: 26px;
+
   @media (min-width: @tablet-width) {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 70px;
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 2px;
   }
 }
 
@@ -194,19 +218,21 @@
   background: @green;
   border: 2px solid @green;
   border-radius: 2px;
-  margin-top: 52px;
-  margin-bottom: 46px;
   font-family: @font;
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
+  margin-bottom: 44px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
 }
 
 
 .blank__textarea {
-  height: 167px;
-  width: 236px;
+  height: 166px;
   border: 2px solid @light-gray;
   border-radius: 1px;
   resize: none;
@@ -218,14 +244,12 @@
 
   @media (min-width: @tablet-width) {
     height: 146px;
-    width: 100%;
-    box-sizing: border-box;
+    margin-bottom: 36px;
   }
 }
 
 .blank__legend {
   text-transform: uppercase;
-  margin-bottom: 20px;
   line-height: 24px;
 }
 

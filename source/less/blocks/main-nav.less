@@ -1,7 +1,10 @@
 .main-nav {
   @media (min-width: @desktop-width) {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     padding: 48px 130px;
+    align-items: baseline;
   }
 }
 
@@ -10,6 +13,9 @@
   padding-top: 24px;
   padding-bottom: 18px;
   padding-right: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 
   @media (min-width: @desktop-width) {
     padding: 0;
@@ -17,7 +23,6 @@
 }
 
 .main-nav__toggle {
-  float: right;
   width: 50px;
   height: 24px;
 

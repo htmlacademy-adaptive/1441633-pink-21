@@ -13,8 +13,11 @@
   }
 }
 
-/*.gallery__post {
-}*/
+.gallery__post {
+  @media (min-width: @desktop-width) {
+    display: flex;
+  }
+}
 
 
 .gallery__post:first-child {
@@ -63,13 +66,16 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
+  margin-bottom: 26px;
 }
 
 .gallery__heart {
-  margin-top: 22px;
+  margin-top: auto;
   border: none;
   background-color: @gray;
   outline: none;
+  width: fit-content;
+  padding: 0;
 }
 
 .gallery__like {

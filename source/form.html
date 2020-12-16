@@ -46,79 +46,95 @@
         </div>
         <form class="members-form" action="https://echo.htmlacademy.ru" method="post">
           <h2 class="visually-hidden">Анкета участника</h2>
-          <fieldset class="blank__block blank__block-name">
-            <legend class="visually-hidden">Ваше имя</legend>
-            <p class="blank__text-field">
-              <label for="name" class="blank__index">Фамилия:</label>
-              <input id="name" type="text" name="" placeholder="Укажите фамилию *">
-            </p>
-            <p class="blank__text-field">
-              <label for="name" class="blank__index">Имя:</label>
-              <input id="name" type="text" name="" placeholder="Введите ваше имя *">
-            </p>
-            <p class="blank__text-field">
-              <label for="name" class="blank__index">Отчество:</label>
-              <input id="name" type="text" name="" placeholder="Ну и отчество тоже *">
-            </p>
-          </fieldset>
-          <fieldset class="blank__block blank__block-achiev block-background-color blank__block-wrapper">
-            <legend class="blank__tittle">Ваши безбашенные достижения в путешествии</legend>
-            <p class="blank__item">
-              <input class="blank__checkbox" type="checkbox" name="achievements" id="selfie" checked>
-              <label class="blank__point" for="selfie">Сделал селфи с акулой</label>
-            </p>
-            <p class="blank__item">
-              <input class="blank__checkbox" type="checkbox" name="achievements" id="tan" checked>
-              <label class="blank__point" for="tan">Обгорел на пляже</label>
-            </p>
-            <p class="blank__item">
-              <input class="blank__checkbox" type="checkbox" name="achievements" id="chuck">
-              <label class="blank__point" for="chuck">Видел Чака Норриса</label>
-            </p>
-            <p class="blank__item">
-              <input class="blank__checkbox" type="checkbox" name="achievements" id="purchases">
-              <label class="blank__point" for="purchases">Накупил сувениров</label>
-            </p>
-            <p class="blank__item">
-              <input class="blank__checkbox" type="checkbox" name="achievements" id="tower" checked>
-              <label class="blank__point" for="tower">Удержал башню</label>
-            </p>
-            <p class="blank__item">
-              <input class="blank__checkbox" type="checkbox" name="achievements" id="hotel">
-              <label class="blank__point" for="hotel">Разгромил отель</label>
-            </p>
-          </fieldset>
-          <fieldset class="blank__block blank__block-contact blank__block-wrapper">
-            <legend class="blank__tittle blank__tittle-contact">Контактная информация</legend>
-              <p class="blank__text-field blank__text-field-contact">
-                <label for="phone" class="blank__index">Номер телефона</label>
-                <input id="phone" type="tel" name="tel" placeholder="Номер, пожалуйста">
+          <div class="blank__block-wrapper">
+            <fieldset class="blank__block blank__block-name">
+              <legend class="visually-hidden">Ваше имя</legend>
+              <p class="blank__text-field">
+                <label for="name" class="blank__index">Фамилия:</label>
+                <input id="name" type="text" name="" placeholder="Укажите фамилию *">
               </p>
-              <p class="blank__text-field blank__text-field-contact">
-                <label for="email" class="blank__index">Адресс почты</label>
-                <input id="email" type="text" name="email" placeholder="Введите почту *">
+              <p class="blank__text-field">
+                <label for="name" class="blank__index">Имя:</label>
+                <input id="name" type="text" name="" placeholder="Введите ваше имя *">
               </p>
-          </fieldset>
-          <fieldset class="blank__block blank__block-app block-background-color blank__block-wrapper">
-            <legend class="blank__tittle">С какими приложением путешествовали?</legend>
-            <p class="blank__item">
-              <input class="blank__radio" type="radio" id="radioButton1" name="system" checked>
-              <label class="blank__point" for="radioButton1">Pink для iOS</label>
-            </p>
-            <p class="blank__item">
-              <input class="blank__radio" type="radio" id="radioButton2" name="system">
-              <label class="blank__point" for="radioButton2">Pink на Android</label>
-            </p>
-            <p class="blank__item">
-              <input class="blank__radio" type="radio" id="radioButton3" name="system">
-              <label class="blank__point" for="radioButton3">Windows Phone</label>
-            </p>
-          </fieldset>
-          <fieldset class="blank__block blank__block-comment blank__block-wrapper">
-            <legend class="blank__tittle">Опишите свои эмоции</legend>
-              <textarea class="blank__textarea" name="story" id="story" rows="10">Можно прям в красках, не стесняясь в выражениях</textarea>
-          </fielldset>
-          <div class="blank__send">
+              <p class="blank__text-field">
+                <label for="name" class="blank__index">Отчество:</label>
+                <input id="name" type="text" name="" placeholder="Ну и отчество тоже *">
+              </p>
+            </fieldset>
+          </div>
+          <div class="block-background-color blank__block-wrapper">
+            <fieldset class="blank__block blank__block-achiev">
+              <legend class="blank__tittle">Ваши безбашенные достижения в путешествии</legend>
+              <div class="blank__section">
+                <p class="blank__item">
+                  <input class="blank__checkbox" type="checkbox" name="achievements" id="selfie" checked>
+                  <label class="blank__point" for="selfie">Сделал селфи с акулой</label>
+                </p>
+                <p class="blank__item">
+                  <input class="blank__checkbox" type="checkbox" name="achievements" id="tan" checked>
+                  <label class="blank__point" for="tan">Обгорел на пляже</label>
+                </p>
+              </div>
+              <div class="blank__section">
+                <p class="blank__item">
+                  <input class="blank__checkbox" type="checkbox" name="achievements" id="chuck">
+                  <label class="blank__point" for="chuck">Видел Чака Норриса</label>
+                </p>
+                <p class="blank__item">
+                  <input class="blank__checkbox" type="checkbox" name="achievements" id="purchases">
+                  <label class="blank__point" for="purchases">Накупил сувениров</label>
+                </p>
+              </div>
+              <div class="blank__section">
+                <p class="blank__item">
+                  <input class="blank__checkbox" type="checkbox" name="achievements" id="tower" checked>
+                  <label class="blank__point" for="tower">Удержал башню</label>
+                </p>
+                <p class="blank__item">
+                  <input class="blank__checkbox" type="checkbox" name="achievements" id="hotel">
+                  <label class="blank__point" for="hotel">Разгромил отель</label>
+                </p>
+              </div>
+            </fieldset>
+          </div>
+          <div class="blank__block-wrapper">
+            <fieldset class="blank__block blank__block-contact">
+              <legend class="blank__tittle blank__tittle-contact">Контактная информация</legend>
+                <p class="blank__text-field blank__text-field-contact">
+                  <label for="phone" class="blank__index">Номер телефона</label>
+                  <input id="phone" type="tel" name="tel" placeholder="Номер, пожалуйста">
+                </p>
+                <p class="blank__text-field blank__text-field-contact">
+                  <label for="email" class="blank__index">Адресс почты</label>
+                  <input id="email" type="text" name="email" placeholder="Введите почту *">
+                </p>
+            </fieldset>
+          </div>
+          <div class="block-background-color blank__block-wrapper">
+            <fieldset class="blank__block blank__block-app block-background-color">
+              <legend class="blank__tittle">С какими приложением путешествовали?</legend>
+              <p class="blank__item">
+                <input class="blank__radio" type="radio" id="radioButton1" name="system" checked>
+                <label class="blank__point" for="radioButton1">Pink для iOS</label>
+              </p>
+              <p class="blank__item">
+                <input class="blank__radio" type="radio" id="radioButton2" name="system">
+                <label class="blank__point" for="radioButton2">Pink на Android</label>
+              </p>
+              <p class="blank__item">
+                <input class="blank__radio" type="radio" id="radioButton3" name="system">
+                <label class="blank__point" for="radioButton3">Windows Phone</label>
+              </p>
+            </fieldset>
+          </div>
+          <div class="blank__block-wrapper">
+            <fieldset class="blank__block blank__block-comment">
+              <legend class="blank__tittle">Опишите свои эмоции</legend>
+                <textarea class="blank__textarea" name="story" id="story" rows="10">Можно прям в красках, не стесняясь в выражениях</textarea>
+            </fieldset>
+          </div>
+          <div class="blank__send wrapper">
             <button class="blank__button" type="submit">Отправить форму</button>
           <p class="blank__legend"><span class=blank__notice>*</span> — обязательные поля</p>
           </div>
