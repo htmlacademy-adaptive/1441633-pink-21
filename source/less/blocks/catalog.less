@@ -1,25 +1,24 @@
 .catalog {
   background-color: @gray;
   padding-top: 82px;
-  width: 100%;
   overflow: hidden;
 }
 
 .catalog__table {
   text-transform: uppercase;
   position: relative;
-  right: 195%;
+  left: -200%;
+  width: 400%;
 
   @media (min-width: @tablet-width) {
     position: static;
+    width: 100%;
   }
 }
 
 .catalog__table-head {
   background-color: @back;
   color: @white;
-  display: flex;
-  flex-direction: row;
 }
 
 .catalog__service {
@@ -27,7 +26,6 @@
   line-height: 30px;
   padding-top: 16px;
   padding-bottom: 34px;
-  width: 100%;
   border-right: 2px solid @gray;
 
   @media (min-width: @tablet-width) {
@@ -54,18 +52,15 @@
   line-height: 30px;
   height: 60px;
   text-align: left;
-  display: flex;
-  flex-direction: row;
 }
 
 .catalog__possibility-point {
   padding-left: 20px;
   padding-right: 20px;
-  width: 234px;
   border: 1px solid @light-gray;
 
   @media (min-width: @tablet-width) {
-    width: 100%;
+    width: 25%;
     padding-left: 14px;
     padding-right: 14px;
     text-transform: none;

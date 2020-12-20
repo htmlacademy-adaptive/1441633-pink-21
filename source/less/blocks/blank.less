@@ -4,27 +4,27 @@
 
 .blank__block {
   border: none;
-  margin-top: 42px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-bottom: 42px;
-  padding: 0;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  padding-top: 42px;
 
   @media (min-width: @tablet-width) {
     border: 2px solid @light-gray;
     border-radius: 1px;
     padding-right: 60px;
     padding-left: 60px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-right: 22px;
+    margin-left: 22px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: 24px;
-    margin-bottom: 24px;
+    margin-right: 130px;
+    margin-left: 130px;
   }
+}
+
+.blank__block-inner-container {
+  // padding-left: 20px;
 }
 
 .blank__section {
@@ -34,66 +34,123 @@
   }
 }
 
-.blank__block-app {
-  @media (min-width: @desktop-width) {
-    display: flex;
-    flex-direction: column;
-    width: 25%;
-    position: absolute;
-    margin: 0;
-    top: 0;
-    right: 132px;
-    padding-right: 32px;
-    padding-left: 32px;
-    margin-top: 6px;
-  }
-}
-
-.blank__block-achiev {
-  @media (min-width: @desktop-width) {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-}
-
-.blank__block-contact {
-  @media (min-width: @desktop-width) {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-}
-
-.blank__block-comment {
-  margin-bottom: 0;
-  padding-bottom: 0;
-}
-
-.blank__block-wrapper {
-  padding-left: 20px;
-  padding-right: 20px;
-
-  @media (min-width: @desktop-width) {
-    padding-left: 130px;
-    padding-right: 130px;
-  }
-}
-
 .blank__block-name {
   border: none;
-  padding-top: 0;
+  // padding-top: 0;
+
+  @media (min-width: @tablet-width) {
+    order: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 130px;
+  }
+}
+
+.blank__block-name-border {
+  border: none;
 
   @media (min-width: @tablet-width) {
     padding: 0;
   }
 
   @media (min-width: @desktop-width) {
-    width: 52%;
-    position: relative;
+    margin: 0;
+    width: 120%;
+  }
+}
+
+.blank__block-name-border .blank__text-field {
+  @media (min-width: @tablet-width) {
+    margin-top: 60px;
+  }
+}
+
+.blank__block-achiev {
+  // padding-left: 20px;
+  // padding-right: 20px;
+
+  @media (min-width: @tablet-width) {
+    order: 2;
+  }
+
+  @media (min-width: @desktop-width) {
+    // padding-left: 130px;
+    // padding-right: 130px;
+    width: 100%;
+
+  }
+}
+
+.blank__block-achiev-border {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.blank__block-app {
+  // padding-left: 20px;
+  // padding-right: 20px;
+
+  @media (min-width: @tablet-width) {
+    // padding-right: 32px;
+    // padding-left: 32px;
+    order: 1;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+    margin-left: auto;
+    margin-right: 130px;
+    width: 36%;
+  }
+}
+
+.blank__block-app-border {
+  @media (min-width: @desktop-width) {
+    margin: 0;
+  }
+}
+
+.blank__block-contact {
+  padding-top: 42px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 0;
+    order: 3;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+  }
+}
+
+.blank__block-contact-border {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.blank__block-comment {
+  // margin-bottom: 0;
+  // padding-bottom: 0;
+
+  @media (min-width: @tablet-width) {
+    order: 4;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
   }
 }
 
 .blank__text-field {
-  width: 100%;
+  text-align: left;
+  align-items: baseline;
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -102,6 +159,10 @@
 }
 
 .blank__text-field-contact {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+
   @media (min-width: @tablet-width) {
     flex-direction: column-reverse;
   }
@@ -115,14 +176,14 @@
   padding-top: 20px;
   padding-bottom: 18px;
   padding-left: 20px;
-  margin-bottom: 18px;
+  // margin-bottom: 18px;
   border: 2px solid @light-gray;
   border-radius: 1px;
   width: 100%;
   box-sizing: border-box;
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 48px;
+    // margin-bottom: 48px;
   }
 
   &::placeholder {
@@ -142,15 +203,11 @@
 .blank__index {
   color: @pink;
   font-size: 14px;
-  padding-left: 22px;
-  float: left;
   line-height: 30px;
   text-transform: uppercase;
 
   @media (min-width: @tablet-width) {
-    padding-right: 20px;
-    padding-bottom: 26px;
-    padding-top: 14px;
+    margin-right: 20px;
   }
 }
 
@@ -161,6 +218,8 @@
   text-transform: uppercase;
   padding-left: 20px;
   padding-right: 20px;
+  padding-top: 42px;
+  padding-bottom: 42px;
 }
 
 .blank__tittle-contact {
@@ -172,14 +231,10 @@
 }
 
 .blank__item {
-  display: flex;
-  flex-direction: row;
   margin-bottom: 38px;
   text-align: left;
   font-size: 18px;
   line-height: 30px;
-  align-items: center;
-  flex-basis: 30%;
 }
 
 .blank__checkbox {
@@ -196,18 +251,21 @@
 
 .blank__send {
   margin-top: 52px;
-  margin-bottom: 26px;
 
   @media (min-width: @tablet-width) {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 70px;
-    margin-bottom: 50px;
+    margin-right: 22px;
+    margin-left: 22px;
+    order: 5;
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 2px;
+    width: 100%;
+    margin-right: 130px;
+    margin-left: 130px;
   }
 }
 
@@ -233,7 +291,7 @@
 
 .blank__textarea {
   height: 166px;
-  border: 2px solid @light-gray;
+  border: 2px solid @gray;
   border-radius: 1px;
   resize: none;
   font-size: 18px;
@@ -241,10 +299,16 @@
   color: @back;
   line-height: 30px;
   padding: 20px 20px 20px 20px;
+  width: 230px;
 
   @media (min-width: @tablet-width) {
     height: 146px;
-    margin-bottom: 36px;
+    width: 90%;
+    margin-bottom: 52px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 46px;
   }
 }
 

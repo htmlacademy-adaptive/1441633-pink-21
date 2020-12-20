@@ -1,7 +1,10 @@
 .post-photo {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .post-photo-wrapper {
@@ -10,6 +13,7 @@
   padding-right: 20px;
   padding-top: 20px;
   padding-bottom: 30px;
+  margin: 0 auto;
 
   @media (min-width: @tablet-width) {
     padding-top: 56px;
@@ -17,14 +21,19 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-left: 130px;
-    margin-right: 130px;
     padding-bottom: 56px;
+    width: 780px;
+    margin: 0 auto;
     padding-left: 80px;
-    padding-right: 60px;
+    padding-right: 80px;
   }
 }
 
 .post-photo__img {
-  /* line-height: 24px;*/
+  display: contents;
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 56px;
+    padding-left: 80px;
+  }
 }
