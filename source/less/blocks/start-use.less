@@ -11,11 +11,29 @@
   font-size: 24px;
   line-height: 32px;
   font-weight: 300;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 50px;
+    line-height: 68px;
+  }
 }
 
 .start-use__wrapper {
-  padding-left: 46px;
   padding-top: 102px;
-  padding-right: 46px;
   padding-bottom: 50px;
+  width: 228px;
+  display: inline-block;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 190px;
+    padding-bottom: 140px;
+    width: 600px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 184px;
+    padding-bottom: 104px;
+    width: 750px;
+  }
 }

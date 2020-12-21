@@ -1,5 +1,6 @@
 .slider {
-  /* line-height: 24px;*/
+  // display: flex;
+  // flex-direction: column;
 }
 
 .slider__list {
@@ -8,6 +9,10 @@
 
 .slider__item {
   /* line-height: 24px;*/
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-flow: column;
+  }
 }
 
 .slider__toggles {

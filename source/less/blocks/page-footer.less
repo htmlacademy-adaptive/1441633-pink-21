@@ -1,13 +1,29 @@
 .page-footer {
-  /* line-height: 24px;*/
+  /* @media (min-width: @tablet-width) {
+  }
+
+  @media (min-width: @desktop-width) {
+  }*/
 }
 
 .page-footer__wrapper {
-  min-height: 284px;
-  margin-left: 74px;
   margin-top: 40px;
-  margin-right: 74px;
   margin-bottom: 50px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    min-height: 127px;
+    margin-left: 20px;
+    margin-top: 36px;
+    margin-right: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 100px;
+    margin-top: 70px;
+    margin-bottom: 76px;
+  }
 }
 
 .page-footer__social {

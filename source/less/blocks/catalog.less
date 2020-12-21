@@ -1,10 +1,19 @@
 .catalog {
   background-color: @gray;
   padding-top: 82px;
+  overflow: hidden;
 }
 
 .catalog__table {
   text-transform: uppercase;
+  position: relative;
+  left: -200%;
+  width: 400%;
+
+  @media (min-width: @tablet-width) {
+    position: static;
+    width: 100%;
+  }
 }
 
 .catalog__table-head {
@@ -13,11 +22,21 @@
 }
 
 .catalog__service {
-  min-width: 276px;
   font-size: 16px;
   line-height: 30px;
   padding-top: 16px;
   padding-bottom: 34px;
+  border-right: 2px solid @gray;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 20px;
+    padding-bottom: 16px;
+  }
+}
+
+.catalog__service:nth-child(1) {
+  background-color: @gray;
+  border: none;
 }
 
 .catalog__price {
@@ -38,4 +57,12 @@
 .catalog__possibility-point {
   padding-left: 20px;
   padding-right: 20px;
+  border: 1px solid @light-gray;
+
+  @media (min-width: @tablet-width) {
+    width: 25%;
+    padding-left: 14px;
+    padding-right: 14px;
+    text-transform: none;
+  }
 }

@@ -1,52 +1,57 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>HTML Academy: Пинк</title>
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body class="page-body">
-      <header class="page-header">
-        <nav class="main-nav">
-          <div class="main-nav__container">
-            <div class="logo">
-              <a href="index.html" class="logo__link">
-                <img src="img/logo.png" alt="Приложение Pink">
-              </a>
-            </div>
-            <button class="main-nav__toggle" type="button">
-              <span class="visually-hidden">Открыть навигацию сайта</span>
-            </button>
-          </div>
-          <ul class="main-nav__list nav-list">
-            <li class="nav-list__item">
-              <a class="nav-list__link" href="index.html">Главная</a>
-            </li>
-            <li class="nav-list__item">
-              <a class="nav-list__link" href="catalog.html">Фотографии</a>
-            </li>
-            <li class="nav-list__item">
-              <a class="nav-list__link nav-list__link-current">Конкурс</a>
-            </li>
-            <li class="nav-list__item">
-              <a class="nav-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-      <main class="page-main blank">
-        <div class="start-use">
-          <div class="start-use__wrapper">
-            <h1 class="start-use__join">Конкурс на самое безбашенное путешествие с Пинк</h1>
-          </div>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML Academy: Пинк</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="page-body">
+  <header class="page-header">
+    <nav class="main-nav">
+      <div class="main-nav__container">
+        <div class="logo">
+          <a href="index.html" class="logo__link">
+            <img src="img/logo.png" alt="Приложение Pink">
+          </a>
         </div>
-        <div class="wrapper">
-          <p class="use-text">Поделитесь своей историей и получите шанс выиграть ценный приз &ndash; 1000 миль на вашу бонусную карту!</p>
-        </div>
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <h2 class="visually-hidden">Анкета участника</h2>
-          <fieldset class="blank__block wrapper">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть навигацию сайта</span>
+        </button>
+      </div>
+      <ul class="main-nav__list nav-list">
+        <li class="nav-list__item">
+          <a class="nav-list__link" href="index.html">Главная</a>
+        </li>
+        <li class="nav-list__item">
+          <a class="nav-list__link" href="catalog.html">Фотографии</a>
+        </li>
+        <li class="nav-list__item">
+          <a class="nav-list__link nav-list__link-current">Конкурс</a>
+        </li>
+        <li class="nav-list__item">
+          <a class="nav-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="page-main blank">
+    <div class="start-use">
+      <div class="start-use__wrapper">
+        <h1 class="start-use__join">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      </div>
+    </div>
+    <div class="wrapper">
+      <p class="use-text">Поделитесь своей историей и получите шанс выиграть ценный приз &ndash; 1000 миль на вашу
+        бонусную карту! <span class="use-text__add">Пожалуйста, заполните форму ниже:</span></p>
+    </div>
+
+      <form class="members-form " action="https://echo.htmlacademy.ru" method="post">
+        <h2 class="visually-hidden">Анкета участника</h2>
+        <div class="blank__block-name">
+          <fieldset class="blank__block blank__block-name-border">
             <legend class="visually-hidden">Ваше имя</legend>
             <p class="blank__text-field">
               <label for="name" class="blank__index">Фамилия:</label>
@@ -61,48 +66,57 @@
               <input id="name" type="text" name="" placeholder="Ну и отчество тоже *">
             </p>
           </fieldset>
-          <fieldset class="blank__block block-background-color">
-            <div class="wrapper">
+        </div>
+        <div class="blank__block-achiev block-background-color">
+          <fieldset class="blank__block blank__block-achiev-border">
             <legend class="blank__tittle">Ваши безбашенные достижения в путешествии</legend>
-            <p class="blank__item">
-              <input class="blank__checkbox" type="checkbox" name="achievements" id="selfie" checked>
-              <label class="blank__point" for="selfie">Сделал селфи с акулой</label>
-            </p>
-            <p class="blank__item">
-              <input class="blank__checkbox" type="checkbox" name="achievements" id="tan" checked>
-              <label class="blank__point" for="tan">Обгорел на пляже</label>
-            </p>
-            <p class="blank__item">
-              <input class="blank__checkbox" type="checkbox" name="achievements" id="chuck">
-              <label class="blank__point" for="chuck">Видел Чака Норриса</label>
-            </p>
-            <p class="blank__item">
-              <input class="blank__checkbox" type="checkbox" name="achievements" id="purchases">
-              <label class="blank__point" for="purchases">Накупил сувениров</label>
-            </p>
-            <p class="blank__item">
-              <input class="blank__checkbox" type="checkbox" name="achievements" id="tower" checked>
-              <label class="blank__point" for="tower">Удержал башню</label>
-            </p>
-            <p class="blank__item">
-              <input class="blank__checkbox" type="checkbox" name="achievements" id="hotel">
-              <label class="blank__point" for="hotel">Разгромил отель</label>
-            </p>
-            </div>
-          </fieldset>
-          <fieldset class="blank__block wrapper">
-            <legend class="visually-hidden">Контактные данные</legend>
-              <p class="blank__text-field">
-                <label for="phone" class="blank__index">Номер телефона</label>
-                <input id="phone" type="tel" name="tel" placeholder="Номер, пожалуйста">
+              <div class="blank__section">
+              <p class="blank__item">
+                <input class="blank__checkbox" type="checkbox" name="achievements" id="selfie" checked>
+                <label class="blank__point" for="selfie">Сделал селфи с акулой</label>
               </p>
-              <p class="blank__text-field">
-                <label for="email" class="blank__index">Адресс почты</label>
-                <input id="email" type="text" name="email" placeholder="Введите почту *">
+              <p class="blank__item">
+                <input class="blank__checkbox" type="checkbox" name="achievements" id="tan" checked>
+                <label class="blank__point" for="tan">Обгорел на пляже</label>
               </p>
+              </div>
+              <div class="blank__section">
+              <p class="blank__item">
+                <input class="blank__checkbox" type="checkbox" name="achievements" id="chuck">
+                <label class="blank__point" for="chuck">Видел Чака Норриса</label>
+              </p>
+              <p class="blank__item">
+                <input class="blank__checkbox" type="checkbox" name="achievements" id="purchases">
+                <label class="blank__point" for="purchases">Накупил сувениров</label>
+              </p>
+              </div>
+              <div class="blank__section">
+              <p class="blank__item">
+                <input class="blank__checkbox" type="checkbox" name="achievements" id="tower" checked>
+                <label class="blank__point" for="tower">Удержал башню</label>
+              </p>
+              <p class="blank__item">
+                <input class="blank__checkbox" type="checkbox" name="achievements" id="hotel">
+                <label class="blank__point" for="hotel">Разгромил отель</label>
+              </p>
+              </div>
           </fieldset>
-          <fieldset class="blank__block block-background-color">
-            <div class="wrapper">
+        </div>
+        <div class="blank__block-contact">
+          <fieldset class="blank__block blank__block-contact-border">
+            <legend class="blank__tittle blank__tittle-contact">Контактная информация</legend>
+            <p class="blank__text-field blank__text-field-contact">
+              <label for="phone" class="blank__index">Номер телефона</label>
+              <input id="phone" type="tel" name="tel" placeholder="Номер, пожалуйста">
+            </p>
+            <p class="blank__text-field blank__text-field-contact">
+              <label for="email" class="blank__index">Адресс почты</label>
+              <input id="email" type="text" name="email" placeholder="Введите почту *">
+            </p>
+          </fieldset>
+        </div>
+        <div class="blank__block-app block-background-color">
+          <fieldset class="blank__block blank__block-app-border">
             <legend class="blank__tittle">С какими приложением путешествовали?</legend>
             <p class="blank__item">
               <input class="blank__radio" type="radio" id="radioButton1" name="system" checked>
@@ -116,54 +130,58 @@
               <input class="blank__radio" type="radio" id="radioButton3" name="system">
               <label class="blank__point" for="radioButton3">Windows Phone</label>
             </p>
-          </div>
           </fieldset>
+        </div>
+        <div class="blank__block-comment">
           <fieldset class="blank__block">
-            <div class="blank__wrapper">
-              <legend class="blank__tittle">Опишите свои эмоции</legend>
-              <textarea class="blank__textarea" name="story" id="story" rows="10">Можно прям в красках, не стесняясь в выражениях</textarea>
-            </div>
-          </fielldset>
+            <legend class="blank__tittle">Опишите свои эмоции</legend>
+            <textarea class="blank__textarea" name="story" id="story"
+              rows="10">Можно прям в красках, не стесняясь в выражениях</textarea>
+          </fieldset>
+        </div>
+        <div class="blank__send">
           <button class="blank__button" type="submit">Отправить форму</button>
           <p class="blank__legend"><span class=blank__notice>*</span> — обязательные поля</p>
-        </form>
-      </main>
+        </div>
+      </form>
+  </main>
 
-      <footer class="page-footer">
-      <div class="page-footer__wrapper">
-        <div class="logo">
-          <a href="index.html" class="logo__link">
-            <img src="#" alt="Приложение Pink">
-          </a>
-        </div>
-        <section class="page-footer__social">
-          <h2 class="visually-hidden">Соцсети</h2>
-          <ul class="social-list">
-            <li class="social-list__item">
-              <a href="" class="social-list__link">
-                <span class="visually-hidden">Наша страница в Твиттер</span>
-              </a>
-            </li>
-            <li class="social-list__item">
-              <a href="" class="social-list__link">
-                <span class="visually-hidden">Наша группа в Фейсбук</span>
-              </a>
-            </li>
-            <li class="social-list__item">
-              <a href="" class="social-list__link">
-                <span class="visually-hidden">Наш канал на YouTube</span>
-              </a>
-            </li>
-          </ul>
-        </section>
-        <div class="page-footer__copyright copyright">
-          <p class="copyright__link">
-            <a href="https://htmlacademy.ru/intensive/adaptive">
-              <span class="copyright__link-text">Разработано</span>
-            </a>
-          </p>
-        </div>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <div class="logo">
+        <a href="index.html" class="logo__link">
+          <img src="#" alt="Приложение Pink">
+        </a>
       </div>
-    </footer>
-  </body>
+      <section class="page-footer__social">
+        <h2 class="visually-hidden">Соцсети</h2>
+        <ul class="social-list">
+          <li class="social-list__item">
+            <a href="" class="social-list__link">
+              <span class="visually-hidden">Наша страница в Твиттер</span>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a href="" class="social-list__link">
+              <span class="visually-hidden">Наша группа в Фейсбук</span>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a href="" class="social-list__link">
+              <span class="visually-hidden">Наш канал на YouTube</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <div class="page-footer__copyright copyright">
+        <p class="copyright__link">
+          <a href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="copyright__link-text">Разработано</span>
+          </a>
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>

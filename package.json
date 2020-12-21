@@ -39,6 +39,7 @@
     "node": "14.15.0"
   },
   "dependencies": {
-    "global": "^4.4.0"
+    "global": "^4.4.0",
+    "normalize.css": "^8.0.1"
   }
 }
